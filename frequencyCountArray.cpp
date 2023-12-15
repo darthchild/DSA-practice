@@ -48,11 +48,14 @@ int main(){
 	sort( arr.begin(), arr.end() );
 	int largest = arr[len - 1];
 
+	// makes a vector of pairs, each pair has 
+	// a number & its occurence
 	for (int i = 0; i <= largest; i++){
 		int c = count(begin(arr), end(arr), i);
 		v.push_back(make_pair( i, c ));
 	}
 
+	// prints the occurence
 	for( auto i: v){
 	    cout << i.second <<" ";
 	}
