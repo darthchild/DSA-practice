@@ -6,6 +6,7 @@ element in the array.
 */
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int quickSelect(vector<int>& nums, int k) {
@@ -40,7 +41,6 @@ int quickSelect(vector<int>& nums, int k) {
 void main(){
 
     vector<int> arr = {3,5,2,1,6,4};
-    k = 2;
-
+    int k = 2;
     quickSelect(arr,k);
 }
