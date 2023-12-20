@@ -9,7 +9,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 
 - Day-1 : frequency count of each element
 - Day-2 : 2nd largest , Kth largest element in array
-- Day-3 :
+- Day-3 : Quick Sort, reverse an array
 - Day-4 :
 - Day-5 :
 
