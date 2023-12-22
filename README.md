@@ -7,7 +7,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 
 ### Daily Problems  
 
-- Day-1 : frequency count of each element
+- Day-1 : frequency count in array, reduce an array
 - Day-2 : 2nd largest , Kth largest element in array
 - Day-3 : Quick Sort, reverse an array
 - Day-4 : Intersection of 2 arrays
