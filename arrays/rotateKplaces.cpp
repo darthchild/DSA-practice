@@ -1,6 +1,24 @@
+/*
+Original Leetcode Question->
+
+189. Rotate Array
+(Medium)
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+
+
+Example 1:
+
+Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation:
+rotate 1 steps to the right: [7,1,2,3,4,5,6]
+rotate 2 steps to the right: [6,7,1,2,3,4,5]
+rotate 3 steps to the right: [5,6,7,1,2,3,4]
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
-
 
 void rotateLeft(vector<int> &arr, int k){
 
@@ -16,6 +34,7 @@ void rotateLeft(vector<int> &arr, int k){
     for(int i=0; i<k; i++)
         arr[n-k+i] = temp[i];
 }
+
 
 // Optimal in-place solution with O(1) space complexity
 void rotateLeftOpt(vector<int> &arr, int k){
