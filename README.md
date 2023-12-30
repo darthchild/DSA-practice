@@ -12,7 +12,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-3 : Quick Sort, reverse an array
 - Day-4 : Intersection of 2 arrays
 - Day-5 : Rotate array by 1 place, K places right & left
-- Day-6 :
+- Day-6 : Move 0s to end of array 
 - Day-7 :
 - Day-8 :
 - Day-9 :
