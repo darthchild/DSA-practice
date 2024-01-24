@@ -14,7 +14,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-5 : Rotate array by 1 place, K places right & left
 - Day-6 : Move 0s to end of array 
 - Day-7 : remove duplicates, check if array sorted
-- Day-8 :
+- Day-8 : missing number in array
 - Day-9 :
 - Day-10 : 
 
