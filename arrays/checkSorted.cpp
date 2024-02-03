@@ -15,22 +15,26 @@ Output: 1
 using namespace std;
 
 
+
+// FIRST SOLUTION
+
+int isSorted0(int n, vector<int> a) {
+    int cnt = 0;
+    for(int i=0; i<n-1; i++){
+        if(a[i] <= a[i+1]){
+            cnt++;
+        }else{
+            return 0;
+        }
+    }
+
+    if(cnt = n-1)
+        return 1;
+
+}
+
+// BETTER SOLUTION (SELF)
 int isSorted(int n, vector<int> a) {
-    
-    // FIRST SOLUTION
-    // int cnt = 0;
-    // for(int i=0; i<n-1; i++){
-    //     if(a[i] <= a[i+1]){
-    //         cnt++;
-    //     }else{
-    //         return 0;
-    //     }
-    // }
-
-    // if(cnt = n-1)
-    //     return 1;
-
-    // BETTER SOLUTION (SELF)
     int i = 0;
     while(a[i] <= a[i+1] && i<n-1) {
         i++;
