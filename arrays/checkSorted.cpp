@@ -17,36 +17,32 @@ using namespace std;
 
 
 // FIRST SOLUTION
-
 int isSorted0(int n, vector<int> a) {
-    int cnt = 0;
+    
     for(int i=0; i<n-1; i++){
-        if(a[i] <= a[i+1]){
-            cnt++;
-        }else{
-            return 0;
-        }
+        if(a[i] <= a[i+1])
+            continue;
+        else
+            return 0; 
     }
-
-    if(cnt = n-1)
-        return 1;
+    return 1;
 
 }
 
-// BETTER SOLUTION (SELF)
+// ALTERNATE SOLUTION (SELF)
 int isSorted(int n, vector<int> a) {
     int i = 0;
     while(a[i] <= a[i+1] && i<n-1) {
         i++;
     }
 
-    if(i == n-1)
-        return 1;
-    return 0;
+    return i == n - 1;
 }
 
 int main(){
     //vector<int> arr = {1,2,3,4,5};
     vector<int> arr = {2,1};
     cout << isSorted(arr.size(),arr) << endl;
+
+    cout << isSorted0(arr.size(),arr) << endl;
 }
