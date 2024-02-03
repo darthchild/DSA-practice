@@ -6,6 +6,7 @@ using namespace std;
 // TC - O(n logn)
 int missingNumber0(vector<int>& arr){
 
+
     int n = arr.size();
     sort(arr.begin(), arr.end());
 
@@ -20,10 +21,13 @@ int missingNumber0(vector<int>& arr){
 // BETTER SOLUTION
 // TC - O(n)
 int missingNumber(vector<int>& arr) {
+    
+    //  n = org Array.size - 1
+    // we'll calc sum of first N-1 numbers
+    // (N = size of org array)
+    int n = arr.size();
 
-    int n = arr.size()+1;
-
-    int orgSum = ( (n-1) * (n) ) / 2;
+    int orgSum = (n * (n+1) ) / 2;
     int currSum = 0;
 
     for(auto i:arr){
