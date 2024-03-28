@@ -15,7 +15,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-6 : Move 0s to end of array 
 - Day-7 : remove duplicates, check if array sorted
 - Day-8 : missing number in array
-- Day-9 :
+- Day-9 : max no. of 1s in array
 - Day-10 : 
 
 ### Data Structures
