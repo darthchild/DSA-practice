@@ -16,7 +16,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-7 : remove duplicates, check if array sorted
 - Day-8 : missing number in array
 - Day-9 : max no. of 1s in array
-- Day-10 : 
+- Day-10 : longest subarray with sum K
 
 ### Data Structures
 
