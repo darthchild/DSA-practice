@@ -11,12 +11,13 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-2 : 2nd largest , Kth largest element in array
 - Day-3 : Quick Sort, reverse an array
 - Day-4 : Intersection of 2 arrays
-- Day-5 : Rotate array by 1 place, K places right & left
+- Day-5 : Rotate array by 1 place, K places (right & left)
 - Day-6 : Move 0s to end of array 
 - Day-7 : remove duplicates, check if array sorted
 - Day-8 : missing number in array
 - Day-9 : max no. of 1s in array
 - Day-10 : longest subarray with sum K
+- Day-11 : subarray with Sum K, Two Sum O(n)
 
 ### Data Structures
 
