@@ -18,6 +18,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-9 : max no. of 1s in array
 - Day-10 : longest subarray with sum K
 - Day-11 : subarray with Sum K, Two Sum O(n)
+- Day-12 : Kadane's algo, majority element
 
 ### Data Structures
 
