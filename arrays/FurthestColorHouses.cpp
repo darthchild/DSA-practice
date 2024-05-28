@@ -11,7 +11,7 @@ Return the maximum distance between two houses with different a.
 Input: a = [1,1,1,6,1,1,1]
 Output: 3
 
-                 '       '
+            '       '
 Input: a = [1,8,3,8,3]
 Output: 4
 */
@@ -21,22 +21,16 @@ using namespace std;
 
 
 
-// MY SOLUTION - O(n) 
+// MY SOLUTION - O(n^2) 
 int maxDistance(vector<int>& a) {
 
-    int i = 0, j = a.size()-1;
     int maxDist = 0;
+    int n = a.size();
 
-    while(i != j){
-            
-        if(a[i] != a[j] && j != i){
-            maxDist = max(maxDist,abs(i-j));
-        }
-
-        j--;
-        if(i == j){
-            i++;
-            j = a.size()-1;
+    for(int i=0; i < n; i++){
+        for(int j=i+1; j < n; j++){
+            if(a[i] != a[j])
+                maxDist = max(maxDist, abs(j-i));
         }
     }
     return maxDist;
@@ -48,15 +42,16 @@ int maxDistance1(vector<int>& a) {
 
     int n = a.size();
     int max1 = 0,max2 = 0;
-    int paint1 = a[0], paint2 = a[n-1];
-    int start1 = 0, start2 = n-1;
+    int start = a[0], end = a[n-1];
 
     for(int i=1; i<n; i++){
-        if(a[i]!=paint1) 
-            max1 = max(max1,abs(i-start1));
+        if(a[i] != start) 
+            max1 = max(max1,i);
 
-        if(a[n-i-1]!=paint2) 
-        max2 = max(max2,abs(n-i-1-start2));
+        int j = n-i-1;
+        
+        if(a[j] != end) 
+            max2 = max(max2, abs(j-(n-1)) );
     }
     return max(max1,max2);
 
