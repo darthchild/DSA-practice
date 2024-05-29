@@ -21,7 +21,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-12 : Kadane's algo, majority element
 - Day-13 : buy & sell stock, replace with right greatest, Furthest diff color houses
 - Day-14 : Revision, O(n) soln - furthest diff houses
-- Day-15 :
+- Day-15 : Non repeating digits, quick sort rev., C++ references & pointers study
 
 ### Data Structures
 
