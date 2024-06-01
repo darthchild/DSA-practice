@@ -22,6 +22,18 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-13 : buy & sell stock, replace with right greatest, Furthest diff color houses
 - Day-14 : Revision, O(n) soln - furthest diff houses
 - Day-15 : Non repeating digits, Sort Colours, quick sort rev.
+- Day-16 : Rearrange elements in + - order, Rotate Matrix by 90deg
+- Day-17 :
+- Day-18 :
+- Day-19 :
+- Day-20 :
+- Day-21 :
+- Day-22 :
+- Day-23 :
+- Day-24 :
+- Day-25 :
+- Day-26 :
+- Day-27 :
 
 ### Data Structures
 
