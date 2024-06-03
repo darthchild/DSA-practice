@@ -24,7 +24,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-15 : Non repeating digits, Sort Colours, quick sort rev.
 - Day-16 : Rearrange elements in + - order, Rotate Matrix by 90deg
 - Day-17 : Matrix basics & study
-- Day-18 : 
+- Day-18 : Set Matrix zeroes, Matrix Spiral 
 - Day-19 :
 - Day-20 :
 - Day-21 :
