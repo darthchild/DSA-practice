@@ -64,10 +64,8 @@ void transpose(vector<vector<int>>& mat, int n)
         }
     }
 
-
     // OR 
 
-    // this one does one less swap (which was extra in the first one)
     for(int i=0; i<n; i++){
         for(int j=0; j<i; j++){
             swap(mat[i][j], mat[j][i]);
