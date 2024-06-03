@@ -30,14 +30,13 @@ void setZeroes(vector<vector<int>>& mat) {
 
                 // setting whole i'th row as 0s
                 for(int k=0; k<m; k++){
-                    if(mat[i][k] != 0)
-                        mat[i][k] = INT_MAX;
+                    mat[i][k] = INT_MAX;
                 }
 
                 // setting all (x,j)th E as 0
                 for(int k=0; k<n; k++){
                     for(int l=0; l<m; l++){
-                        if(l==j && mat[k][l] != 0)
+                        if(l==j)
                             mat[k][l] = INT_MAX;
                     }
                 }
@@ -58,41 +57,41 @@ void setZeroes(vector<vector<int>>& mat) {
 void setZeroes1(vector<vector<int>>& mat) {
     int n = mat.size();
     int m = mat[0].size();
+
     bool flag1 = false, flag2 = false;
+
     for(int i=0; i<n; i++){
-        if(mat[i][0] == 0){
+        if(mat[i][0] == 0)
             flag1 = true;
-        }
     }
+
     for(int j=0; j<m; j++){
-        if(mat[0][j] == 0){
+        if(mat[0][j] == 0)
             flag2 = true;
-        }
     }
+
     for(int i=1; i<n; i++){
         for(int j=1; j<m; j++){
-            if(mat[i][j] == 0){
+            if(mat[i][j] == 0)
                 mat[i][0] = mat[0][j] = 0;
-            }
         }
     }
+
     for(int i=1; i<n; i++){
         for(int j=1; j<m; j++){
-            if(mat[i][0] == 0 || mat[0][j] == 0){
+            if(mat[i][0] == 0 || mat[0][j] == 0)
                 mat[i][j] = 0;
-            }
         }
+    }
+
+    if(flag1 == true){
+        for(int i=0; i<n; i++)
+            mat[i][0] = 0;
     }
     
-    if(flag1 == true){
-        for(int i=0; i<n; i++){
-            mat[i][0] = 0;
-        }
-    }
     if(flag2 == true){
-        for(int j=0; j<m; j++){
+        for(int j=0; j<m; j++)
             mat[0][j] = 0;
-        }
     }
 }
 
