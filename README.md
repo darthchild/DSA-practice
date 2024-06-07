@@ -25,7 +25,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-16 : Rearrange elements in + - order, Rotate Matrix by 90deg
 - Day-17 : Matrix basics & study
 - Day-18 : Set Matrix zeroes, Matrix Spiral, Leader of array
-- Day-19 :
+- Day-19 : Sum of odd subarrays, Degree of array
 - Day-20 :
 - Day-21 :
 - Day-22 :
