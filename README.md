@@ -26,9 +26,9 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-17 : Matrix basics & study
 - Day-18 : Set Matrix zeroes, Matrix Spiral, Leader of array
 - Day-19 : Sum of odd subarrays, Degree of array
-- Day-20 :
-- Day-21 :
-- Day-22 :
+- Day-20 : Longest consecutive sequence
+- Day-21 : Union of two arrays, Remove duplicates (unsorted array)
+- Day-22 : Next Permutation 
 - Day-23 :
 - Day-24 :
 - Day-25 :
