@@ -1,7 +1,7 @@
 /*
 697. Degree of an Array
 (Easy)
-Given a non-empty array of non-negative integers nums, the degree of this array
+Given a array of positive integers nums, the degree of this array
 is defined as the maximum frequency of any one of its elements.
 
 Your task is to find the smallest possible length of a (contiguous) subarray of nums, 
@@ -10,7 +10,7 @@ that has the same degree as nums.
 Example 1:
 
 Input:  [1,2,2,3,2,1,3]
-Output: 2
+Output: 4
 Explanation: 
     The input array has a degree of 3 because the element 2 appear thrice.
     Of the subarrays that have the same degree:
@@ -30,31 +30,26 @@ int findDistance(int e, vector<int>& arr){
     // we'll find dist by calc. the diff bw 1st & 
     // last occurence of the Most Freq. element)
     int n = arr.size();
-    int first = -1, last = -1;
+    int i = 0, j = n - 1;
 
-    //finding 1st occ.
-    for(int i=0; i<n; i++){
-        if(arr[i] == e){
-            first = i;
+    while (i <= j) {
+        if (arr[i] != e)
+            i++;
+        if (arr[j] != e) 
+            j--;
+        if(arr[i] == e && arr[j] == e)
             break;
-        }
     }
-    //finding last occ.
-    for(int j=n-1; j>=0; j++){
-        if(arr[j] == e){
-            last = i;
-        }
-    }
-
-    return last-first;
+    return j-i+1;
 }
+
 
 int findShortestSubArray(vector<int>& arr) {
     
     unordered_map<int,int> map; // hash map
-    int deg = INT_MIN;
+    int deg = 0;
 
-    for(auto& i:arr){
+    for(int& i:arr){
         map[i]++;
         deg = max(deg,map[i]);
     }
@@ -67,10 +62,16 @@ int findShortestSubArray(vector<int>& arr) {
 
     // finding which Most Freq. E's subarray length is least
     int ans = INT_MAX;
-    for(auto& e:list){
-        int len = findDistance(e,arr);
-        ans = min(ans,len);
-    }
+    for(int& e:list)
+        ans = min(ans,findDistance(e,arr));
 
-    return ans+1;
+    return ans;
+}
+
+// we've used "&" in the loops here for better efficiency 
+// as then, unecessary copies wont be created
+
+int main(){
+    vector<int> arr = {1,2,2,3,2,1,3};
+    cout << findShortestSubArray(arr);
 }
