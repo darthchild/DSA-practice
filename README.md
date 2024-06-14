@@ -29,7 +29,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-20 : Longest consecutive sequence
 - Day-21 : Union of two arrays, Remove duplicates (unsorted array)
 - Day-22 : Next Permutation 
-- Day-23 :
+- Day-23 : Basic Math problems (fibonacci,reverse..)
 - Day-24 :
 - Day-25 :
 - Day-26 :
