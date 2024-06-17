@@ -30,14 +30,14 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-21 : Union of two arrays, Remove duplicates (unsorted array)
 - Day-22 : Next Permutation 
 - Day-23 : Basic Math problems (fibonacci,sum of div,reverse..)
-- Day-24 : Valid string palindrome
-- Day-25 :
+- Day-24 : Valid palindrome, Outermost parenthesis
+- Day-25 : Optimal soln of prev prob.
 - Day-26 :
 - Day-27 :
 
 ### Data Structures
 
-- [ ] Arrays
+- [x] Arrays
 - [ ] Strings
 - [ ] Linked Lists
 - [ ] Searching & Sorting
