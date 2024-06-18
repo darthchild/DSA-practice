@@ -32,8 +32,21 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-23 : Basic Math problems (fibonacci,sum of div,reverse..)
 - Day-24 : Valid palindrome, Outermost parenthesis
 - Day-25 : Optimal soln of prev prob.
-- Day-26 :
-- Day-27 :
+- Day-26 : Reverse words, Anagram, Largest odd num
+- Day-28 : 
+- Day-29 :
+- Day-30 :
+- Day-31 :
+- Day-32 :
+- Day-34 :
+- Day-35 :
+- Day-36 :
+- Day-37 :
+- Day-38 :
+- Day-39 :
+- Day-40 :
+- Day-41 :
+- Day-42 :
 
 ### Data Structures
 
