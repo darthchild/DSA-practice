@@ -33,7 +33,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-24 : Valid palindrome, Outermost parenthesis
 - Day-25 : Optimal soln of prev prob.
 - Day-26 : Reverse words, Anagram, Largest odd num
-- Day-28 : 
+- Day-28 : Rotate string
 - Day-29 :
 - Day-30 :
 - Day-31 :
