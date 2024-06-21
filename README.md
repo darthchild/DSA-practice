@@ -34,8 +34,8 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-25 : Optimal soln of prev prob.
 - Day-26 : Reverse words, Anagram, Largest odd num
 - Day-28 : Rotate string
-- Day-29 : Sort chars by frequency
-- Day-30 :
+- Day-29 : Sort chars by freq, Longest common prefix, Product of arr execpt self
+- Day-30 : 
 - Day-31 :
 - Day-32 :
 - Day-34 :
