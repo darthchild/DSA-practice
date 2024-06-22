@@ -35,8 +35,8 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-26 : Reverse words, Anagram, Largest odd num
 - Day-28 : Rotate string
 - Day-29 : Sort chars by freq, Longest common prefix, Product of arr execpt self
-- Day-30 : 
-- Day-31 :
+- Day-30 : Max nesting depth of parenthesis, Optimal Soln for - Longest Common Prefix
+- Day-31 : Min operations to make all Es=1 - I & II, Min op to make all Es divisible by 3 (Contest)
 - Day-32 :
 - Day-34 :
 - Day-35 :
