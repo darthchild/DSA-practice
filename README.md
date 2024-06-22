@@ -48,18 +48,23 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-41 :
 - Day-42 :
 
-### Data Structures
+### Topics
 
-- [x] Arrays
+- [x] Arrays - Easy & Medium
+- [ ] Arrays - Hard
 - [ ] Strings
 - [ ] Linked Lists
-- [ ] Searching & Sorting
+
+- [ ] Binary Search
+- [ ] Sorting Techniques
+- [ ] Recursion & Backtracking
+- [ ] Bit Manipulation
+
 - [ ] Stacks
 - [ ] Queues
+- [ ] Dynamic Programming
 - [ ] Trees
 - [ ] Graphs
-- [ ] Recursion & Backtracking
-- [ ] Dynamic Programming
 
 ## How to Contribute
 
