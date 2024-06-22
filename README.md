@@ -51,15 +51,15 @@ a repository to track and document my progress in mastering DSA concepts and sol
 ### Topics
 
 - [x] Arrays - Easy & Medium
-- [ ] Arrays - Hard
 - [ ] Strings
 - [ ] Linked Lists
-
+- [ ] Arrays - Hard
+------
 - [ ] Binary Search
 - [ ] Sorting Techniques
 - [ ] Recursion & Backtracking
 - [ ] Bit Manipulation
-
+------
 - [ ] Stacks
 - [ ] Queues
 - [ ] Dynamic Programming
