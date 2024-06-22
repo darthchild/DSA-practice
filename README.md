@@ -30,12 +30,12 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-21 : Union of two arrays, Remove duplicates (unsorted array)
 - Day-22 : Next Permutation 
 - Day-23 : Basic Math problems (fibonacci,sum of div,reverse..)
-- Day-24 : Valid palindrome, Outermost parenthesis
-- Day-25 : Optimal soln of prev prob.
-- Day-26 : Reverse words, Anagram, Largest odd num
+- Day-24 : Valid palindrome, Remove outermost parenthesis
+- Day-25 : Optimal solns of prev probs
+- Day-26 : Reverse words, Valid anagram, Largest odd num in string
 - Day-28 : Rotate string
-- Day-29 : Sort chars by freq, Longest common prefix, Product of arr execpt self
-- Day-30 : Max nesting depth of parenthesis, Optimal Soln for - Longest Common Prefix
+- Day-29 : Sort chars by freq, Longest common prefix, Product of arr except self
+- Day-30 : Max nesting depth of parenthesis, Optimal Soln for "Longest Common Prefix"
 - Day-31 : Min operations to make all Es=1 - I & II, Min op to make all Es divisible by 3 (Contest)
 - Day-32 :
 - Day-34 :
