@@ -51,18 +51,14 @@ string largestOddNumber1(string s) {
     for(int i=n-1; i>=0; i--){
 
         int dig = s[i]-'0';
-        cout << dig << endl;
-
         if(!num.empty() || dig % 2 != 0){
             num = s[i] + num;
             maxNum = max(stol(num),maxNum);
-        } 
-        
+        }        
     }
+
     if(maxNum == 0)
         return "";
     else
         return to_string(maxNum);
-
-    return res;
 }
