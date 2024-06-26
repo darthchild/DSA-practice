@@ -36,18 +36,18 @@ long long maximumSubarraySum(vector<int>& a, int k) {
     unordered_set<int> s; // to store the current Subarray
 
     for (int j = 0; j < a.size(); j++) {
-        // Shrink window if necessary
-        while (s.count(a[j]) || s.size() == k) {
+        // 1. Shrink window if necessary
+        while ( s.size() >= k || s.count(a[j]) ) {
             sum -= a[i];
             s.erase(a[i]);
             i++;
         }
 
-        // Expand window
+        // 2. Expand window
         sum += a[j];
         s.insert(a[j]);
 
-        // Update maxSum if we have a valid window
+        // 3. Update maxSum if we have a valid window
         if (s.size() == k) 
             maxSum = max(maxSum, sum);
     }

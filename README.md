@@ -39,6 +39,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-31 : 1. & 2. Min operations to make all Es=1 - I & II, 3.Min op to make all Es divsble by 3 (LC Contest)
 II
 - Day-32 : 1.Minimum Size Subarray Sum, 2.Max sum of distinct subarr of size K
+- Day-33 :
 - Day-34 :
 - Day-35 :
 - Day-36 :
