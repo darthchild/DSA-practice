@@ -38,8 +38,8 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-30 : 1.Max nesting depth of parenthesis, 2.Optimal Soln for "Longest Common Prefix"
 - Day-31 : 1. & 2. Min operations to make all Es=1 - I & II, 3.Min op to make all Es divsble by 3 (LC Contest)
 II
-- Day-32 : 1.Minimum Size Subarray Sum, 2.Max sum of distinct subarr of size K
-- Day-33 :
+- Day-32 : 1.Min Size Subarray Sum, 2.Max sum of distinct subarr of size K
+- Day-33 : 1.Max Sum of Almost Unique Subarray, 2.Alt Soln - prev No.2
 - Day-34 :
 - Day-35 :
 - Day-36 :

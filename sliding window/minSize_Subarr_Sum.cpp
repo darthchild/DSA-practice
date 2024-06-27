@@ -24,22 +24,22 @@ using namespace std;
 
 int smallestSubArrayLen(vector<int>& arr,int target) {
     
-    int ws = 0, we; // window Start & End pointers
+    int i = 0, j; // window Start & End pointers
     int sum = 0, minSize = INT_MAX, n = arr.size();
 
-    for(we = 0; we<n; we++){
+    for(j = 0; j<n; j++){
         
-        sum += arr[we];
+        sum += arr[j];
 
         while(sum >= target){
-            minSize = min(minSize, we-ws+1);
-            sum -= arr[ws];
-            ws++;
+            minSize = min(minSize, j-i+1);
+            sum -= arr[i];
+            i++;
         }
     }
 
     // if minSize is still INT_MAX 
-    // (no such subarray found), we've to return 0
+    // (no such subarray found), j've to return 0
 
     return minSize == INT_MAX ? 0 : minSize;;
 }
