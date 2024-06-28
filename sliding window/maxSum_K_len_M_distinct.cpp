@@ -38,14 +38,14 @@ long long maxSum(vector<int>& a, int m, int k) {
         sum += a[j];
 
         // Shrink window if it exceeds size k
-        while (j - i + 1 > k) {
+        if(j - i + 1 > k) {
             map[a[i]]--;
             if (map[a[i]] == 0) map.erase(a[i]);                
             sum -= a[i];
             i++;
         }
         
-        // Check if win size is exactly k and has atleast m distinct elements
+        // Check if win size is exactly 'k' & has atleast 'm' distinct elements
         if (j - i + 1 == k && map.size() >= m) 
             maxSum = max(maxSum, sum);
     }

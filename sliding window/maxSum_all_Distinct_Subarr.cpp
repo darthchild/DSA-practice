@@ -5,7 +5,7 @@ You are given an integer array nums and an integer k. Find the maximum subarray
 sum of all the subarrays of nums that meet the following conditions:
     1. The length of the subarray is k
     2. All the elements of the subarray are distinct.
-Return the maximum subarray sum of all the subarrays that meet the conditions.4
+Return the maximum subarray sum of all the subarrays that meet the conditions.
 If no subarray meets the conditions, return 0. A subarray is a contiguous non-empty 
 sequence of elements within an array.
 
@@ -27,8 +27,10 @@ which does not meet the requirements because the element 4 is repeated.
 We return 0 because no subarrays meet the conditions
 .*/
 
+
 #include <bits/stdc++.h>
 using namespace std;
+
 
 // Dynamic Length SW (using Set)
 long long maximumSubarraySum1(vector<int>& a, int k) {
@@ -37,18 +39,21 @@ long long maximumSubarraySum1(vector<int>& a, int k) {
     unordered_set<int> s; // to store the current Subarray
 
     for (int j = 0; j < a.size(); j++) {
-        // 1. Shrink window if necessary
+
+        // 1. Expand window
+        sum += a[j];
+
+        // 2. Shrink window if necessary
         while ( s.size() >= k || s.count(a[j]) ) {
             sum -= a[i];
             s.erase(a[i]);
             i++;
         }
 
-        // 2. Expand window
-        sum += a[j];
+        // 3. Add it to set (make it part of curr subarray)
         s.insert(a[j]);
 
-        // 3. Update maxSum if we have a valid window
+        // 4. Update maxSum if we have a valid window
         if (s.size() == k) 
             maxSum = max(maxSum, sum);
     }
@@ -68,6 +73,7 @@ long long maximumSubarraySum2(vector<int>& a, int k) {
         sum += a[i];
         i++;
     }
+    cout << "i: "<<i << endl;
     
     if(map.size() == k) maxSize = sum; // if all distinct, then ans = sum 
     
@@ -89,13 +95,12 @@ long long maximumSubarraySum2(vector<int>& a, int k) {
 }
 
 
-
 // Dynamic Length SW (using Map)
 long long maximumSubarraySum3(vector<int>& a, int k) {
 
     long long sum = 0, maxSum = 0;
     int i = 0;
-    unordered_map<int,int> map; // to store the current Subarray
+    unordered_map<int,int> map; 
 
     for (int j = 0; j < a.size(); j++) {
         // 1. Shrink window if necessary
@@ -119,10 +124,10 @@ long long maximumSubarraySum3(vector<int>& a, int k) {
 
 
 int main(){
-    vector<int> arr = {1,2,4,8,4,1,5};
+    vector<int> arr = {1,5,4,2,9,9,9};
     int k = 3;
 
-    cout << maximumSubarraySum1(arr,k);
+    cout << maximumSubarraySum2(arr,k);
 }
 
 // TEST CASES 
