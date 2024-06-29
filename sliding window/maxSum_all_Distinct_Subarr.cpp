@@ -64,7 +64,7 @@ long long maximumSubarraySum1(vector<int>& a, int k) {
 // Fixed Length SW (using Map)
 long long maximumSubarraySum2(vector<int>& a, int k) {
 
-    long long maxSize = 0, sum = 0;
+    long long maxSum = 0, sum = 0;
     unordered_map<int, int> map;
     int i = 0;
 
@@ -75,7 +75,7 @@ long long maximumSubarraySum2(vector<int>& a, int k) {
     }
     cout << "i: "<<i << endl;
     
-    if(map.size() == k) maxSize = sum; // if all distinct, then ans = sum 
+    if(map.size() == k) maxSum = sum; // if all distinct, then ans = sum 
     
     while(i < a.size()){
         map[a[i]]++;
@@ -88,12 +88,38 @@ long long maximumSubarraySum2(vector<int>& a, int k) {
             map.erase(a[i-k]);       
                     
         if(map.size() == k) 
-            maxSize = max(maxSize, sum);
+            maxSum = max(maxSum, sum);
         i++;
     }
-    return maxSize;
+    return maxSum;
 }
 
+// Fixed Length SW (using Map) - DIFF ALGO SAME APPROACH
+long long maximumSubarraySum(vector<int>& a, int k) {
+
+    long long sum = 0, maxSum = 0;
+    int i = 0, n = a.size();
+    unordered_map<int, int> map; // Use map to track frequency
+
+    for (int j = 0; j < n; j++) {
+        // Add current element to window
+        map[a[j]]++;
+        sum += a[j];
+
+        // Shrink window if it exceeds size k
+        if(j - i + 1 > k) {
+            map[a[i]]--;
+            if (map[a[i]] == 0) map.erase(a[i]);                
+            sum -= a[i];
+            i++;
+        }
+        
+        if (map.size() == k) 
+            maxSum = max(maxSum, sum);
+    }
+    
+    return maxSum;
+}
 
 // Dynamic Length SW (using Map)
 long long maximumSubarraySum3(vector<int>& a, int k) {

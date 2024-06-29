@@ -27,6 +27,9 @@ Output: 0
 #include <bits/stdc++.h>
 using namespace std;
 
+
+// Note: This code will also work for - Max Sum of Distinct Subarrays
+// just change the condition to - map.size() == k
 long long maxSum(vector<int>& a, int m, int k) {
     long long sum = 0, maxSum = 0;
     int i = 0, n = a.size();
@@ -45,8 +48,8 @@ long long maxSum(vector<int>& a, int m, int k) {
             i++;
         }
         
-        // Check if win size is exactly 'k' & has atleast 'm' distinct elements
-        if (j - i + 1 == k && map.size() >= m) 
+        // Check if win has atleast 'm' distinct elements (we already know win size is exactly 'k' in len)
+        if (map.size() >= m) 
             maxSum = max(maxSum, sum);
     }
     
