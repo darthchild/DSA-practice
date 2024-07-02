@@ -37,11 +37,11 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-29 : 1.Sort chars by freq, 2.Longest common prefix, 3.Product of arr except self
 - Day-30 : 1.Max nesting depth of parenthesis, 2.Optimal Soln for "Longest Common Prefix"
 - Day-31 : 1. & 2. Min operations to make all Es=1 - I & II, 3.Min op to make all Es divsble by 3 (LC Contest)
-..II..
+.. II ..
 - Day-32 : 1.Min Size Subarray Sum, 2.Max sum of distinct subarr of size K
 - Day-33 : 1.Max Sum of Almost Unique Subarray, 2.Alt Soln - prev No.2
-- Day-34 : 1.Longest Substring w/o Repeating Chars, 2. Count substr with K distinct chars
-I
+- Day-34 : 1.Longest Substring All Distinct Chars, 2. Count substr with K distinct chars
+.. III ..
 - Day-35 :
 - Day-36 :
 - Day-37 :
