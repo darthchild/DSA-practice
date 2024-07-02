@@ -46,10 +46,9 @@ int lengthOfLongestSubstring(string s) {
             i++;
         }
 
-        // 3. Update maxSum if we have a valid window
-        if (j-i+1 == map.size())
-            maxSize = max(maxSize, size);
+        // 3. Update maxSum
+        // (no need for checking for valid window size, since its ensured by above while loop)
+        maxSize = max(maxSize, size);
     }
     return maxSize;
-
 }

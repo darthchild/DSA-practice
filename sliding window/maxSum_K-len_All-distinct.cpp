@@ -31,37 +31,35 @@ We return 0 because no subarrays meet the conditions
 #include <bits/stdc++.h>
 using namespace std;
 
+// Fixed Length SW (using Map) 
+long long maximumSubarraySum(vector<int>& a, int k) {
 
-// Dynamic Length SW (using Set)
-long long maximumSubarraySum1(vector<int>& a, int k) {
     long long sum = 0, maxSum = 0;
-    int i = 0;
-    unordered_set<int> s; // to store the current Subarray
+    int i = 0, n = a.size();
+    unordered_map<int, int> map; // Use map to track frequency
 
-    for (int j = 0; j < a.size(); j++) {
-
-        // 1. Expand window
+    for (int j = 0; j < n; j++) {
+        // Add current element to window
+        map[a[j]]++;
         sum += a[j];
 
-        // 2. Shrink window if necessary
-        while ( s.size() >= k || s.count(a[j]) ) {
+        // Shrink window if it exceeds size k
+        if(j - i + 1 > k) {
+            map[a[i]]--;
+            if (map[a[i]] == 0) map.erase(a[i]);                
             sum -= a[i];
-            s.erase(a[i]);
             i++;
         }
-
-        // 3. Add it to set (make it part of curr subarray)
-        s.insert(a[j]);
-
-        // 4. Update maxSum if we have a valid window
-        if (s.size() == k) 
+        
+        if (map.size() == k) 
             maxSum = max(maxSum, sum);
     }
+    
     return maxSum;
 }
 
 
-// Fixed Length SW (using Map)
+// Fixed Length SW (using Map)  - DIFF APPROACH
 long long maximumSubarraySum2(vector<int>& a, int k) {
 
     long long maxSum = 0, sum = 0;
@@ -94,32 +92,35 @@ long long maximumSubarraySum2(vector<int>& a, int k) {
     return maxSum;
 }
 
-// Fixed Length SW (using Map) - DIFF ALGO SAME APPROACH
-long long maximumSubarraySum(vector<int>& a, int k) {
 
+// Dynamic Length SW (using Set)
+long long maximumSubarraySum1(vector<int>& a, int k) {
     long long sum = 0, maxSum = 0;
-    int i = 0, n = a.size();
-    unordered_map<int, int> map; // Use map to track frequency
+    int i = 0;
+    unordered_set<int> s; // to store the current Subarray
 
-    for (int j = 0; j < n; j++) {
-        // Add current element to window
-        map[a[j]]++;
+    for (int j = 0; j < a.size(); j++) {
+
+        // 1. Expand window
         sum += a[j];
 
-        // Shrink window if it exceeds size k
-        if(j - i + 1 > k) {
-            map[a[i]]--;
-            if (map[a[i]] == 0) map.erase(a[i]);                
+        // 2. Shrink window if necessary
+        while ( s.size() >= k || s.count(a[j]) ) {
             sum -= a[i];
+            s.erase(a[i]);
             i++;
         }
-        
-        if (map.size() == k) 
+
+        // 3. Add it to set (make it part of curr subarray)
+        s.insert(a[j]);
+
+        // 4. Update maxSum if we have a valid window
+        if (s.size() == k) 
             maxSum = max(maxSum, sum);
     }
-    
     return maxSum;
 }
+
 
 // Dynamic Length SW (using Map)
 long long maximumSubarraySum3(vector<int>& a, int k) {

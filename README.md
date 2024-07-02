@@ -40,9 +40,9 @@ a repository to track and document my progress in mastering DSA concepts and sol
 .. II ..
 - Day-32 : 1.Min Size Subarray Sum, 2.Max sum of distinct subarr of size K
 - Day-33 : 1.Max Sum of Almost Unique Subarray, 2.Alt Soln - prev No.2
-- Day-34 : 1.Longest Substring All Distinct Chars, 2. Count substr with K distinct chars
+- Day-34 : 1.Longest Substr All Distinct Chars, 2. Count substr with exactly K distinct chars
 .. III ..
-- Day-35 :
+- Day-35 : 1. Longest Substr exactly K distinct Chars, 2. At most K distint chars
 - Day-36 :
 - Day-37 :
 - Day-38 :
