@@ -43,8 +43,8 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-34 : 1.Longest Substr All Distinct Chars, 2. Count substr with exactly K distinct chars
 .. III ..
 - Day-35 : 1. Longest Substr exactly K distinct Chars, 2. At most K distint chars
-- Day-36 : 1. Longest Substr K repeating chars, 2. Longest Subarray K frequency, 3. Count Subarr K Distinct Chars
-- Day-37 :
+- Day-36 : 1. Longest Substr K repeating chars, 2. Longest Subarray K frequency
+- Day-37 : 1. Count Subarr with K Distinct Ints
 - Day-38 :
 - Day-39 :
 - Day-40 :
