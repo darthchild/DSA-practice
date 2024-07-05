@@ -1,7 +1,7 @@
 /*
-Count number of substrings (GFG)
+countAtMost number of substrings (GFG)
 Medium
-Given a string of lowercase alphabets, count all possible substrings 
+Given a string of lowercase alphabets, countAtMost all possible substrings 
 (not necessarily distinct) that have exactly k distinct characters. 
 
 Example 1:
@@ -15,7 +15,7 @@ Explanation: The substrings are: "a", "b", "a", "aa", "a", "c", "a".
 
 Your Task:
 You don't need to read input or print anything. Your task is to complete the function 
-substrCount() which takes the string S and an integer K as inputs and returns the number 
+substrcountAtMost() which takes the string S and an integer K as inputs and returns the number 
 of substrings having exactly K distinct characters.
 
 Expected Time Complexity: O(|S|).
@@ -26,34 +26,45 @@ Expected Auxiliary Space: O(1).*/
 using namespace std;
 
 
-long long int count(const string& s, int k) {
-    if (k == 0) return 0;
+long long int countAtMost(const string& s, int k) {
     
-    int n = s.length();
-    int i = 0, j = 0;
-    long long int count = 0;
+    if (k == 0) return 0;
+    int n = s.length(), i = 0, j = 0,uniq = 0;
+    long long int cnt = 0;
     vector<int> freq(26, 0);
-    int uniq = 0;
     
     while (j < n) {
         
         // Add the current character to the window
-        if (freq[s[j] - 'a'] == 0) uniq++;
+        if (freq[s[j] - 'a'] == 0)
+            uniq++;
         freq[s[j] - 'a']++;
         j++;
         
         // Shrink the window from the left until we have at most k unique characters
         while (uniq > k) {
-            if (freq[s[i] - 'a'] == 1) {
+            if (freq[s[i] - 'a'] == 1) 
                 uniq--;
-            }
             freq[s[i] - 'a']--;
             i++;
         }
         
         // Add the number of substrings ending at j-1 with at most k unique characters
-        count += (j - i);
+        cnt += j - i;
     }
+
+    return cnt;   
+}
+
+
+long long int substrCount(string s, int k) {
     
-    return count;
+    return countAtMost(s,k) - countAtMost(s,k-1);
+    
+}
+
+int main(){
+
+    string s = "aba";
+    cout << countAtMost(s,1);
 }
