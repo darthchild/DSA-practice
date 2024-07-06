@@ -45,7 +45,8 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-35 : 1. Longest Substr exactly K distinct Chars, 2. At most K distint chars
 - Day-36 : 1. Longest Substr K repeating chars, 2. Longest Subarray K frequency
 - Day-37 : 1. Count Subarr with K Distinct Ints, 2. Count Subarr with K odd nums
-- Day-38 :
+..I..
+- Day-38 : 1. Alternating Groups I, 2. Alternating Groups II
 - Day-39 :
 - Day-40 :
 - Day-41 :
