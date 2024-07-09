@@ -47,7 +47,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-37 : 1. Count Subarr with K Distinct Ints, 2. Count Subarr with K odd nums
 ..I..
 - Day-38 : 1. Alternating Groups I, 2. Alternating Groups II
-- Day-39 :
+- Day-39 : 1. Sum of Beauty of All Substrings, 2. Revision
 - Day-40 :
 - Day-41 :
 - Day-42 :

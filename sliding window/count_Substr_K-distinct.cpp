@@ -19,14 +19,44 @@ substrcountAtMost() which takes the string S and an integer K as inputs and retu
 of substrings having exactly K distinct characters.
 
 Expected Time Complexity: O(|S|).
-Expected Auxiliary Space: O(1).*/
+Expected Auxiliary Space: O(1).
+*/
 
 
 #include <bits/stdc++.h>
 using namespace std;
 
+long long int atMostK (string s, int k){
+    if (k < 0) return 0;
 
-long long int countAtMost(const string& s, int k) {
+    int i = 0, j = 0, cnt = 0,n = s.size();
+    long long int res = 0;
+    vector<int> f(26,0);
+
+    for(j=0; j<n;j++){
+        
+        f[s[j] - 'a']++;
+        if (f[s[j] - 'a'] == 1) cnt++;
+
+        while (cnt > k){
+            f[s[i] - 'a']--;
+            if (f[s[i] - 'a'] == 0) cnt--;
+            i++;
+        }
+
+        res += (j - i + 1);
+    }
+    
+    return res;
+}
+
+
+long long int substrCount (string s, int k) {
+    return atMostK (s, k) - atMostK (s, k - 1);
+}
+
+// #2
+long long int countAtMost1(const string& s, int k) {
     
     if (k == 0) return 0;
     int n = s.length(), i = 0, j = 0,uniq = 0;
@@ -55,16 +85,14 @@ long long int countAtMost(const string& s, int k) {
 
     return cnt;   
 }
-
-
-long long int substrCount(string s, int k) {
+long long int substrCount1(string s, int k) {
     
-    return countAtMost(s,k) - countAtMost(s,k-1);
+    return countAtMost1(s,k) - countAtMost1(s,k-1);
     
 }
 
 int main(){
 
     string s = "aba";
-    cout << countAtMost(s,1);
+    cout << "ANNSWER: " << substrCount(s,2);
 }
