@@ -48,8 +48,8 @@ a repository to track and document my progress in mastering DSA concepts and sol
 ..I..
 - Day-38 : 1. Alternating Groups I, 2. Alternating Groups II
 - Day-39 : 1. Sum of Beauty of All Substrings, 2. Revision
-- Day-40 :
-- Day-41 :
+- Day-40 : 1. LL Basics - conversion,insertion,search
+- Day-41 : 1. Delete a node from LL, 2. Doubly LL Basics
 - Day-42 :
 
 ### Topics
