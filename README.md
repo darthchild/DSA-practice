@@ -54,7 +54,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-42 : 1. DLL Basics, 2. Reverse DLL
 .. I .. 
 - Day-43 : 1. Reverse LL, 2. Find Middle of LL
-- Day-44 : 1. Detect Loop in LL, 2. Find starting point of loop, 3. Length of loop
+- Day-44 : 1. Detect Loop in LL, 2. Find starting point of loop, 3. Length of loop, 4. Delete Middle Node
 - Day-45 : 
 - Day-46 : 
 - Day-47 : 
