@@ -48,9 +48,17 @@ a repository to track and document my progress in mastering DSA concepts and sol
 ..I..
 - Day-38 : 1. Alternating Groups I, 2. Alternating Groups II
 - Day-39 : 1. Sum of Beauty of All Substrings, 2. Revision
+.. BRK ..
 - Day-40 : 1. LL Basics - conversion,insertion,search
 - Day-41 : 1. Delete a node from LL, 2. Doubly LL Basics
-- Day-42 :
+- Day-42 : 1. DLL Basics, 2. Reverse DLL
+.. I .. 
+- Day-43 : 1. Reverse LL, 2. Find Middle of LL
+- Day-44 : 1. Detect Loop in LL, 2. Find starting point of loop, 3. Length of loop
+- Day-45 : 
+- Day-46 : 
+- Day-47 : 
+- Day-48 : 
 
 ### Topics
 
