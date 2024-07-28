@@ -56,8 +56,9 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-43 : 1. Reverse LL, 2. Find Middle of LL
 - Day-44 : 1. Detect Loop in LL, 2. Find starting point of loop, 3. Length of loop, 4. Delete Middle Node
 - Day-45 : 1. Odd Even LL
-- Day-46 : 1. Sort LL, 2. Merge Sort
-- Day-47 : 
+- Day-46 : 1. Sort LL, 2. Merge 2 sorted LLs
+.. I ..
+- Day-47 : 1. Merge Sort
 - Day-48 : 
 
 ### Topics
