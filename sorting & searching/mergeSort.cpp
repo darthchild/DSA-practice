@@ -1,8 +1,7 @@
-
 #include <bits/stdc++.h>
 using namespace std;
-
 #define PB push_back
+
 
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp; 
@@ -21,19 +20,15 @@ void merge(vector<int> &arr, int low, int mid, int high) {
         }
     }
 
-    // if left half elements still left
-    while (l <= mid) {
-        temp.PB(arr[l]);
-        l++;
-    }
+    // For leftover Es in Left half
+    for(int i=l; i<=mid; i++)
+        temp.PB(arr[i]);
 
-    // if right half elements still left 
-    while (r <= high) {
-        temp.PB(arr[r]);
-        r++;
-    }
+    // For leftover Es in Right half 
+    for(int i=r; i<=high; i++)
+        temp.PB(arr[i]);
 
-    // copying all elements from temp to arr
+    // copying all Es from temp to arr (now sorted)
     for (int i = low; i <= high; i++)
         arr[i] = temp[i - low];
 }

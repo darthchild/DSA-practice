@@ -58,8 +58,19 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-45 : 1. Odd Even LL
 - Day-46 : 1. Sort LL, 2. Merge 2 sorted LLs
 .. I ..
-- Day-47 : 1. Merge Sort
-- Day-48 : 
+- Day-47 : 1. Merge Sort, 2. Palindrome LL
+- Day-48 : 1. Remove Nth node from End
+- Day-49 : 1. Revision, 2. Find Instersection of 1 LLs
+- Day-50 : 1. Sort LL of 0,1,2 , 2. Add 1 to LL Number
+- Day-51 :
+- Day-52 :
+- Day-53 :
+- Day-54 :
+- Day-55 :
+- Day-56 :
+- Day-57 :
+- Day-58 :
+
 
 ### Topics
 

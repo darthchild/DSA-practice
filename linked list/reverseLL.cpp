@@ -10,25 +10,22 @@ class Node{
     Node(int data){
         this->data = data;
         this->next = nullptr;
-        this->back = nullptr;
     }
 };
 
 Node* reverse(Node* head){
 
-    if(head == NULL) return NULL;
-    if(head->next == NULL) return head;
+    if(head || head->next == NULL) return head;
     
-    Node* prev = NULL, *it = head;
+    Node* prev = NULL, *it = head, *aft;
 
     while(it != NULL){
-        Node* aft = it->next;
+        aft = it->next;
         it->next = prev;
         prev = it;
         it = aft;
     }
-    head = prev;
-    return head;
+    return prev;
 }
 
 Node* convertToLL(vector<int> a){
@@ -59,7 +56,14 @@ int main(){
     Node* head = convertToLL(arr);
 
     Node* n = reverse(head);
-    printLL(n);
+    //printLL(n);
+
+    while(n){
+        cout << n->data << " ";
+        n = n->next;
+    }
+
+
 
 }
 
