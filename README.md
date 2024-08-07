@@ -62,10 +62,11 @@ a repository to track and document my progress in mastering DSA concepts and sol
 - Day-48 : 1. Remove Nth node from End
 - Day-49 : 1. Revision, 2. Find Instersection of 1 LLs
 - Day-50 : 1. Sort LL of 0,1,2 , 2. Add 1 to LL Number
-- Day-51 :
-- Day-52 :
-- Day-53 :
-- Day-54 :
+- Day-51 : 1. Add two LL numbers, 2. Valid Perfect Square
+- Day-52 : 1. Rotate list
+.. III ..
+- Day-53 : 1. ION Q-1, 2. Copy List w Random ptr
+- Day-54 : 1. Opt Soln - Copy List, 2. Recursive Reverse List
 - Day-55 :
 - Day-56 :
 - Day-57 :

@@ -12,6 +12,7 @@ class ListNode{
     }
 };
 
+
 ListNode* reverse(ListNode* head) {
     if (head == NULL) return NULL;
     ListNode* prev = NULL;
@@ -26,17 +27,10 @@ ListNode* reverse(ListNode* head) {
     return prev;
 }
 
-    /*
-              s
-    1 -> 2 -> 2 -> 1 -> X
 
-    s
-    1 -> 2 -> X
-
-    */
-
+// OPTIMAL - O(1) Space
 bool isPalindrome(ListNode* head) {
-    if (head == NULL || head->next == NULL) return true;
+    if (!head == NULL || !head->next) return true;
 
     // Find the midpoint using s and f pointers
     ListNode* s = head, *f = head;
@@ -61,69 +55,49 @@ bool isPalindrome(ListNode* head) {
 }
 
 
+// Using Stack - O(n) space
+bool isPalindrome(ListNode* head){
+    stack<int> st;
+    ListNode* it  = head;
 
-
-
-
-
-
-
-
-// MINEEE
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-
-    ListNode* reverse(ListNode* head){
-        if(head == NULL) return NULL;
-        if(head->next == NULL) return head;
-        
-        ListNode* prev = NULL, *it = head;
-
-        while(it != NULL){
-            ListNode* aft = it->next;
-            it->next = prev;
-            prev = it;
-            it = aft;
-        }
-        return prev;
+    while(it){
+        st.push(it->val);
+        it = it->next;
     }
 
-    bool isPalindrome(ListNode* head) {
-
-        if(!head->next) return true;
-    
-        ListNode* newHead = reverse(head);
-        ListNode* a = head, *b = newHead;
-        int len = 0, cnt = 0;
-
-        while(a){
-            len++;
-            a = a->next;
-        }
-        a = head;
-
-        while(a && b){
-            cout << a->val << " " << b->val;
-            if(a->val == b->val)
-                cnt++;
-            a = a->next;
-            b = b->next;
-        }
-
-        cout << endl << len << " " << cnt ;
-
-        if(len == cnt)
-            return true;
-        return false;
+    it = head;
+    while(it && it->val == st.top()){
+        st.pop();
+        it = it->next;
     }
-};
+    return st.empty();
+}
+
+
+// MY SOLUTION
+bool isPalindrome(ListNode* head) {
+
+    if(!head->next) return true;
+
+    ListNode* newHead = reverse(head);
+    ListNode* a = head, *b = newHead;
+    int len = 0, cnt = 0;
+
+    while(a){
+        len++;
+        a = a->next;
+    }
+    a = head;
+
+    while(a && b){
+        cout << a->val << " " << b->val;
+        if(a->val == b->val)
+            cnt++;
+        a = a->next;
+        b = b->next;
+    }
+
+    if(len == cnt)
+        return true;
+    return false;
+}

@@ -12,22 +12,6 @@ class Node{
         this->next = nullptr;
     }
 };
-
-Node* reverse(Node* head){
-
-    if(head || head->next == NULL) return head;
-    
-    Node* prev = NULL, *it = head, *aft;
-
-    while(it != NULL){
-        aft = it->next;
-        it->next = prev;
-        prev = it;
-        it = aft;
-    }
-    return prev;
-}
-
 Node* convertToLL(vector<int> a){
     
     int n = a.size();
@@ -49,6 +33,40 @@ void printLL(Node* head){
         it = it->next;
     }
 }
+
+
+
+// RECURSIVE
+Node* reverseList(Node* head) {
+
+    // BASE CASE
+    if(!head || !head->next) return head;
+    
+    Node* newHead = reverseList(head->next);
+    Node* front = head->next;
+    front->next = head;
+    head->next = NULL;
+
+    return newHead;
+}
+
+
+// ITERATIVE
+Node* reverse(Node* head){
+
+    if(head || head->next == NULL) return head;
+    
+    Node* prev = NULL, *it = head, *aft;
+
+    while(it != NULL){
+        aft = it->next;
+        it->next = prev;
+        prev = it;
+        it = aft;
+    }
+    return prev;
+}
+
 
 
 int main(){

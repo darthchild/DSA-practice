@@ -1,3 +1,44 @@
+// LINKED LIST IMPLEMENTATION TEMPLATE 
+/*
+#include <bits/stdc++.h>
+using namespace std;
+
+class ListNode{
+    public:
+    int data;
+    ListNode* next;
+
+    ListNode(int data){
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+ListNode* constructLLfromArray(vector<int>& a) {
+    
+    int n = a.size();
+    ListNode* head = new ListNode(a[0]);
+    ListNode* it = head;
+    
+    for(int i=1; i<n; i++){
+        ListNode* curr = new ListNode(a[i]);
+        it->next = curr;
+        it = curr;
+    }
+    
+    return head;   
+}
+
+void printLL(ListNode* head){
+    ListNode* it = head;
+    while(it != NULL){
+        cout << it->data << " ";
+        it = it->next;
+    }
+}
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
