@@ -67,7 +67,7 @@ a repository to track and document my progress in mastering DSA concepts and sol
 .. III ..
 - Day-53 : 1. ION Q-1, 2. Copy List w Random ptr
 - Day-54 : 1. Opt Soln - Copy List, 2. Recursive Reverse List
-- Day-55 :
+- Day-55 : 1. Revison - LL Qs.
 - Day-56 :
 - Day-57 :
 - Day-58 :
